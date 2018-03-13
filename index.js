@@ -1,6 +1,7 @@
 'use strict';
 import React, { Component } from 'react';
-import PropTypes from 'prop-types'
+import createReactClass from 'create-react-class';
+import PropTypes from 'prop-types';
 
 import {
   StyleSheet,
@@ -23,7 +24,8 @@ var propTypes = {
   style: View.propTypes.style,
 }
 
-var FloatingLabel  = React.createClass({
+var FloatingLabel  = createReactClass({
+  displayName: 'FloatingLabel',
   propTypes: propTypes,
 
   getInitialState () {
@@ -46,11 +48,13 @@ var FloatingLabel  = React.createClass({
       this.textInput.focus()
     }
   },
+
   componentWillReceiveProps(newProps) {
     if (this.props.setFocus !== newProps.setFocus && newProps.setFocus) {
       this.textInput.focus()
     }
   },
+
   onChangeText(text) {
     this.setState({ text })
     if (this.props.onChangeText) {
@@ -93,8 +97,6 @@ var FloatingLabel  = React.createClass({
       this.props.onBlur(arguments);
     }
   },
-
-
 
   updateText(event) {
     var text = event.nativeEvent.text
