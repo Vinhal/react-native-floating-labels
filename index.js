@@ -21,7 +21,7 @@ var propTypes = {
   inputStyle: textInputPropTypes.style,
   labelStyle: textPropTypes.style,
   disabled: PropTypes.bool,
-  style: View.propTypes.style,
+  style: PropTypes.any,
 }
 
 var FloatingLabel  = createReactClass({
