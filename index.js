@@ -187,13 +187,13 @@ var styles = StyleSheet.create({
     position: 'relative'
   },
   input: {
-    height: 40,
+    height: 400,
     borderColor: 'gray',
     backgroundColor: 'transparent',
     justifyContent: 'center',
     borderWidth: 1,
     color: 'black',
-    fontSize: 58,
+    fontSize: 128,
     borderRadius: 4,
     marginLeft: Platform.OS === 'android' ? -5 : 0,
     // paddingLeft: 10,
@@ -203,12 +203,12 @@ var styles = StyleSheet.create({
 })
 
 var cleanStyle = {
-  fontSize: 58,
+  fontSize: 128,
   top: 7
 }
 
 var dirtyStyle = {
-  fontSize: 58,
+  fontSize: 128,
   top: -17,
 }
 
