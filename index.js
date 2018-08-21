@@ -166,6 +166,7 @@ var FloatingLabel  = createReactClass({
           ref={(c) => { this.textInput = c }}
         >
         </TextInput>
+        <View style={{ height: 20, width: 10, backgroundColor: 'red' }}/>
       </View>
     );
   },
