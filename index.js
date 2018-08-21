@@ -203,12 +203,12 @@ var styles = StyleSheet.create({
 })
 
 var cleanStyle = {
-  fontSize: 20,
+  fontSize: 38,
   top: 7
 }
 
 var dirtyStyle = {
-  fontSize: 12,
+  fontSize: 38,
   top: -17,
 }
 
