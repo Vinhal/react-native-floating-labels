@@ -142,7 +142,7 @@ var FloatingLabel  = createReactClass({
         selectTextOnFocus: this.props.selectTextOnFocus,
         selectionState: this.props.selectionState,
         selection: this.props.selection,
-        style: [styles.input],
+        style: styles.input,
         testID: this.props.testID,
         value: this.props.value,
         underlineColorAndroid: this.props.underlineColorAndroid, // android TextInput will show the default bottom border
@@ -187,13 +187,13 @@ var styles = StyleSheet.create({
     position: 'relative'
   },
   input: {
-    height: 400,
+    height: 40,
     borderColor: 'gray',
     backgroundColor: 'transparent',
     justifyContent: 'center',
     borderWidth: 1,
     color: 'black',
-    fontSize: 128,
+    fontSize: 78,
     borderRadius: 4,
     marginLeft: Platform.OS === 'android' ? -5 : 0,
     // paddingLeft: 10,
@@ -203,12 +203,12 @@ var styles = StyleSheet.create({
 })
 
 var cleanStyle = {
-  fontSize: 128,
+  fontSize: 20,
   top: 7
 }
 
 var dirtyStyle = {
-  fontSize: 128,
+  fontSize: 12,
   top: -17,
 }
 
