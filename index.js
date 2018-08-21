@@ -151,9 +151,9 @@ var FloatingLabel  = createReactClass({
       },
       elementStyles = [styles.element];
 
-    if (this.props.inputStyle) {
-      props.style.push(this.props.inputStyle);
-    }
+    // if (this.props.inputStyle) {
+    //   props.style.push(this.props.inputStyle);
+    // }
 
     if (this.props.style) {
       elementStyles.push(this.props.style);
