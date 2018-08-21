@@ -193,7 +193,7 @@ var styles = StyleSheet.create({
     justifyContent: 'center',
     borderWidth: 1,
     color: 'black',
-    fontSize: 18,
+    fontSize: 58,
     borderRadius: 4,
     marginLeft: Platform.OS === 'android' ? -5 : 0,
     // paddingLeft: 10,
@@ -203,12 +203,12 @@ var styles = StyleSheet.create({
 })
 
 var cleanStyle = {
-  fontSize: 20,
+  fontSize: 58,
   top: 7
 }
 
 var dirtyStyle = {
-  fontSize: 12,
+  fontSize: 58,
   top: -17,
 }
 
