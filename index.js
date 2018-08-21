@@ -160,8 +160,12 @@ var FloatingLabel  = createReactClass({
     }
     return (
   		<View style={elementStyles}>
-        
-        <View style={{ height: 20, width: 10, backgroundColor: 'red' }}/>
+        {this._renderLabel()}
+        <TextInput
+          {...props}
+          ref={(c) => { this.textInput = c }}
+        >
+        </TextInput>
       </View>
     );
   },
@@ -185,7 +189,7 @@ var styles = StyleSheet.create({
   input: {
     height: 40,
     borderColor: 'gray',
-    backgroundColor: 'red',
+    backgroundColor: 'transparent',
     justifyContent: 'center',
     borderWidth: 1,
     color: 'black',
